@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Hritikaa, With All My Love ♡</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper:#f8f1e5;
+  --ink:#49372f;
+  --muted:#866e60;
+  --rose:#a85e62;
+  --line:#dfcdbb;
+  --card:#fffaf2;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:'DM Sans',sans-serif;font-weight:300;
+  background-image:radial-gradient(#a88c7020 .7px,transparent .7px);
+  background-size:8px 8px;
+}
+button,input{font:inherit}
+a{color:inherit}
+nav{
+  position:sticky;top:0;z-index:5;background:#f8f1e5ed;
+  border-bottom:1px solid var(--line);padding:12px 16px;
+  display:flex;justify-content:center;gap:18px;flex-wrap:wrap;
+  backdrop-filter:blur(8px)
+}
+nav a{text-decoration:none;font-size:11px;letter-spacing:1px;color:var(--muted)}
+nav a:hover{color:var(--rose)}
+section{padding:78px 20px;max-width:920px;margin:auto}
+.hero{
+  min-height:88vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;
+  padding:65px 22px;position:relative;overflow:hidden
+}
+.eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--rose)}
+h1,h2,h3,.script,.quote{
+  font-family:'Cormorant Garamond',serif;font-weight:400
+}
+h1{font-size:clamp(55px,10vw,100px);line-height:.95;margin:25px 0 12px}
+h2{font-size:clamp(38px,6vw,58px);text-align:center;margin:0 0 18px}
+h3{font-size:27px;margin:0 0 10px}
+.script{font-family:'Great Vibes',cursive;color:var(--rose)}
+.hero .script{font-size:42px}
+.hero p{max-width:540px;line-height:1.9;color:var(--muted)}
+.heart{color:var(--rose);font-size:25px;margin:20px}
+.btn{
+  display:inline-block;background:var(--rose);color:white;
+  border:0;padding:13px 23px;text-decoration:none;
+  font-size:11px;letter-spacing:1.5px;text-transform:uppercase;
+  cursor:pointer;border-radius:2px;margin-top:20px
+}
+.btn:hover{background:#85474c}
+.section-intro{text-align:center;max-width:650px;margin:0 auto 38px;color:var(--muted);line-height:1.9}
+.paper{
+  background:var(--card);border:1px solid var(--line);
+  padding:clamp(22px,5vw,48px);box-shadow:0 10px 35px #65452b0b;
+  position:relative
+}
+.paper:before{
+  content:"";position:absolute;inset:8px;border:1px solid #eadbca;
+  pointer-events:none
+}
+.letter{position:relative;line-height:2;font-size:15px;white-space:normal}
+.letter p{margin:0 0 18px}
+.letter .signature{font-family:'Great Vibes',cursive;font-size:32px;color:var(--rose)}
+.center{text-align:center}
+.rule{width:65px;height:1px;background:var(--rose);margin:24px auto}
+.apology-grid,.food-grid,.traits,.future-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px
+}
+.tile{
+  background:var(--card);border:1px solid var(--line);
+  padding:22px;text-align:center
+}
+.tile .emoji{font-size:42px;display:block;margin-bottom:12px}
+.tile p{color:var(--muted);line-height:1.75;font-size:13px;margin-bottom:0}
+.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.photo-card{
+  background:var(--card);border:1px solid var(--line);padding:10px;
+  text-align:center;min-width:0
+}
+.photo-card img{width:100%;height:230px;object-fit:cover;display:block;background:#eee1d1}
+.photo-card p{font-family:'Cormorant Garamond',serif;font-size:19px;margin:12px 4px 6px}
+.upload{display:block;font-size:11px;color:var(--muted);margin:8px auto;max-width:100%}
+.upload input{width:100%;font-size:11px}
+.photo-placeholder{
+  height:230px;display:flex;align-items:center;justify-content:center;
+  flex-direction:column;background:#f0e5d7;color:var(--muted);
+  font-family:'Cormorant Garamond',serif;font-size:20px
+}
+.traits .tile{padding:18px}
+.traits h3{font-size:23px}
+.food-grid .tile{text-align:left}
+.food-grid .emoji{font-size:36px}
+.food-grid h3{font-size:25px}
+.food-grid p{font-size:13px;line-height:1.8}
+.bengali{
+  font-family:serif;font-size:17px;line-height:2.2;
+  text-align:left;white-space:pre-line
+}
+.bengali p{margin:0 0 18px}
+.final{
+  text-align:center;padding:95px 20px 110px;
+  background:#eadbd0;margin-top:30px
+}
+.final h2{font-size:clamp(42px,7vw,68px)}
+.final p{max-width:570px;margin:20px auto;line-height:2;color:#765d51}
+footer{text-align:center;padding:28px;color:var(--muted);font-size:11px}
+.small{font-size:11px;color:var(--muted);line-height:1.8}
+@media(max-width:600px){
+ section{padding:58px 16px}
+ nav{gap:12px}
+ nav a{font-size:9px}
+ .photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .photo-card img,.photo-placeholder{height:170px}
+ .apology-grid,.food-grid,.traits,.future-grid{grid-template-columns:1fr}
+ .paper{padding:25px 20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#apology">MY APOLOGY</a>
+<a href="#memories">OUR MEMORIES</a>
+<a href="#you">YOU</a>
+<a href="#food">YOUR FOOD</a>
+<a href="#letter">A LETTER</a>
+<a href="#future">OUR FUTURE</a>
+</nav>
+
+<header class="hero">
+<div class="eyebrow">A little corner of the internet, made just for you</div>
+<div class="heart">♡</div>
+<h1>Hritikaaa</h1>
+<div class="script">The love of my life</div>
+<p>
+I wanted to make you something you could return to whenever you feel like
+being reminded of how loved, admired, appreciated and important you are to me.
+</p>
+<p>
+I love you so much. I want to keep loving you, learning you, choosing you
+and building a beautiful life with you.
+</p>
+<a class="btn" href="#apology">Come inside, my love</a>
+</header>
+
+<section id="apology">
+<div class="eyebrow center">First, something I owe you</div>
+<h2>I'm truly sorry.</h2>
+<p class="section-intro">
+Before I remind you of all the beautiful things I love about us,
+I want to acknowledge the hurt I caused you. You deserve that honesty first.
+</p>
+<div class="paper">
+<div class="letter">
+<p>My Hritikaaa,</p>
+<p>
+I have been thinking about what my actions put you through, and I don't
+want this apology to become another attempt to explain myself. I want to
+take the time to acknowledge what happened and, more importantly, what
+it must have felt like for you.
+</p>
+<p>
+I replied to someone from my past while I was already in a relationship
+with you. I allowed that conversation to become personal. I hid it from
+you, and when you asked me about it, I lied to you twice. I know that
+writing these things plainly does not undo them, but I owe you the truth
+without making it smaller or more comfortable for myself.
+</p>
+<p>
+I understand that this was never just about a message. It was about the
+person you trusted making a choice that made you question where you stood.
+It may have made you wonder whether you were truly being chosen, whether
+there was still someone else occupying a place in my life, and whether
+you could trust what I told you. You should never have been made to feel
+that you had to compete with my past.
+</p>
+<p>
+You should not have had to discover things instead of hearing the truth
+from me. You should not have had to ask repeatedly for honesty. And you
+should not have been left carrying the emotional weight of trying to
+understand, process and repair something that my actions damaged.
+</p>
+<p>
+I also understand that my explanations can feel like I am defending
+myself instead of listening to you. I don't want to do that anymore.
+Whatever I was feeling at the time does not erase the impact of what
+I chose to do. My intentions cannot cancel out your experience.
+</p>
+<p>
+I am sorry for the hurt, the uncertainty, the anger and the exhaustion
+that followed. I am sorry for the moments when you felt alone in a
+relationship where you deserved honesty, consideration and emotional
+security. I am sorry that someone who should have protected your trust
+became the reason you had to question it.
+</p>
+<p>
+I don't expect you to forget this, get over it quickly, or trust me
+simply because I have written a heartfelt letter. You have every right
+to have questions, to need time, and to feel differently on different
+days. I want to listen without becoming defensive, even when the
+conversation is uncomfortable for me.
+</p>
+<p>
+I need to show change in the things I do: being honest even when the
+truth is difficult, maintaining clear boundaries with people from my
+past, never hiding conversations, and being consistent rather than
+only making promises when things are falling apart.
+</p>
+<p>
+You deserve a relationship where you don't have to keep searching for
+reassurance or wondering whether the truth is being withheld. I want
+to become someone whose actions make honesty feel dependable again.
+I know that is something I have to demonstrate over time.
+</p>
+<p>
+I am not asking you to make my guilt feel lighter. I am asking you to
+know that I recognise the hurt I caused, that I take responsibility
+for it, and that I want to do the work without placing that responsibility
+on you.
+</p>
+<p>
+You mattered then. You matter now. And you deserved better from me
+than what I gave you in those moments.
+</p>
+<p class="signature">With all my love, and with genuine remorse.</p>
+</div>
+</div>
+
+<div class="rule"></div>
+<h2 style="font-size:40px">A little apology gallery</h2>
+<p class="section-intro">Because even the smallest sorry deserves to come with a little tenderness.</p>
+<div class="photo-grid" id="sorryGallery">
+<div class="photo-card"><div class="photo-placeholder">🥺<br>I'm sorry</div><p>I'm listening.</p><label class="upload">Add apology picture 1<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">🧸<br>A little hug</div><p>You deserve gentleness.</p><label class="upload">Add apology picture 2<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">💗<br>I'm learning</div><p>Not just words. Actions.</p><label class="upload">Add apology picture 3<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">🌷<br>My apologies</div><p>Your feelings matter.</p><label class="upload">Add apology picture 4<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">🐻<br>Always here</div><p>With patience and care.</p><label class="upload">Add apology picture 5<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">♡<br>One day at a time</div><p>I'll keep showing up.</p><label class="upload">Add apology picture 6<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+</div>
+</section>
+
+<section id="memories">
+<div class="eyebrow center">Little pieces of us</div>
+<h2>My favourite memories</h2>
+<p class="section-intro">
+Eight little spaces for eight moments I want to keep close.
+Every photograph holds a story that words cannot fully tell.
+</p>
+<div class="photo-grid">
+<div class="photo-card"><div class="photo-placeholder">♡<br>Our moment 01</div><p>A moment I wish I could relive.</p><label class="upload">Add memory 1<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">♡<br>Our moment 02</div><p>My favourite kind of company.</p><label class="upload">Add memory 2<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">♡<br>Our moment 03</div><p>Just being with you.</p><label class="upload">Add memory 3<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">♡<br>Our moment 04</div><p>One for the memory books.</p><label class="upload">Add memory 4<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">♡<br>Our moment 05</div><p>My heart remembers this.</p><label class="upload">Add memory 5<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">♡<br>Our moment 06</div><p>A little piece of happiness.</p><label class="upload">Add memory 6<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">♡<br>Our moment 07</div><p>More than a photograph.</p><label class="upload">Add memory 7<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+<div class="photo-card"><div class="photo-placeholder">♡<br>Our moment 08</div><p>And so many more to come.</p><label class="upload">Add memory 8<input type="file" accept="image/*" onchange="preview(this)"></label></div>
+</div>
+</section>
+
+<section id="you">
+<div class="eyebrow center">A thousand little things</div>
+<h2>Everything I adore about you</h2>
+<p class="section-intro">
+I don't love just one version of you. I love the little details,
+the things you might not even notice, and the person you are when
+you are simply being yourself.
+</p>
+<div class="traits">
+<div class="tile"><span class="emoji">☺</span><h3>Your smile</h3><p>Especially that smile with your adorable bunny teeth. It has a way of making an ordinary moment feel brighter.</p></div>
+<div class="tile"><span class="emoji">♡</span><h3>Your eyes</h3><p>The little expressions in them, the way they speak even when you don't say a word.</p></div>
+<div class="tile"><span class="emoji">🌷</span><h3>Your nose</h3><p>One of those little details I find impossibly endearing.</p></div>
+<div class="tile"><span class="emoji">〰</span><h3>Your curls</h3><p>Your hair, your effortless beauty, and the way you look so completely yourself.</p></div>
+<div class="tile"><span class="emoji">✨</span><h3>Your mind</h3><p>Your thoughts, your honesty, your boldness and the depth with which you see the world.</p></div>
+<div class="tile"><span class="emoji">🕊</span><h3>Your heart</h3><p>Your thoughtfulness, kindness and the care you show in ways that stay with me.</p></div>
+</div>
+<div class="paper" style="margin-top:18px">
+<div class="letter center">
+<p class="script" style="font-size:35px">And yes, I find you beautiful.</p>
+<p>
+I find you incredibly attractive in your dressed-up moments and in
+your simplest ones. I love being close to you, holding your hand,
+hugging you for a little longer, kissing you gently and feeling
+that familiar warmth of having you beside me.
+</p>
+<p>
+I want you to feel desired without ever feeling pressured, admired
+without feeling examined, and loved without having to earn it.
+Your comfort, your boundaries and your happiness matter to me.
+</p>
+</div>
+</div>
+</section>
+
+<section id="food">
+<div class="eyebrow center">Made with your hands and heart</div>
+<h2>A little taste of your love</h2>
+<p class="section-intro">
+Some of my favourite memories aren't grand occasions. Sometimes
+they arrive on a plate, in a warm glass, or in the way you remember
+the smallest things about me.
+</p>
+<div class="food-grid">
+<div class="tile"><span class="emoji">🍝</span><h3>Your spaghetti</h3><p>It was so tasty. I still remember how something you cooked so thoughtfully could make an ordinary meal feel special.</p></div>
+<div class="tile"><span class="emoji">🍓🎂</span><h3>Your strawberry birthday cake</h3><p>You made a special birthday cake for me even while you were hurting because of my actions. I will never take that kindness lightly.</p></div>
+<div class="tile"><span class="emoji">🥘</span><h3>Puri bhujia</h3><p>When I was devastated, you remembered my favourite food and took care of me, even though you had your own hurt to carry. That meant more than I can say.</p></div>
+<div class="tile"><span class="emoji">🧈</span><h3>Butter paneer and kheer</h3><p>The butter paneer was lovely, but your kheer deserves its own place. It was genuinely the tastiest kheer I have ever had.</p></div>
+<div class="tile"><span class="emoji">🥛</span><h3>Warm kesar doodh</h3><p>You made sure I had something warm and comforting when I was sick and feeling low. I remember the care as much as the taste.</p></div>
+<div class="tile"><span class="emoji">🍜</span><h3>Yellow chowmein</h3><p>You remembered a favourite from my childhood. It is such a small thing, but being remembered in that way means everything.</p></div>
+</div>
+<div class="rule"></div>
+<p class="center script" style="font-size:35px">Thank you for loving me in the little ways.</p>
+<p class="section-intro">
+I appreciate the time, thought and effort behind these gestures.
+I never want to treat your care as something I am simply entitled to.
+</p>
+</section>
+
+<section id="letter">
+<div class="eyebrow center">একটা কথা, শুধু তোমার জন্য</div>
+<h2>আমার হৃতিকাআ</h2>
+<p class="section-intro">A letter in the language of my heart.</p>
+<div class="paper">
+<div class="bengali">
+<p>আমার হৃতিকাআ,</p>
+<p>তোমাকে একটা কথা খুব মন থেকে বলতে চাই — আমি তোমাকে সত্যিই খুব ভালোবাসি। শুধু ভালো সময়ের জন্য নয়, শুধু যখন সবকিছু সহজ থাকে তখনও নয়। তোমার হাসি, তোমার অভিমান, তোমার চুপ করে থাকা, তোমার স্বপ্ন, তোমার ছোট ছোট পছন্দ — সবকিছুর সঙ্গেই আমি থাকতে চাই।</p>
+<p>আমার ভুলের জন্য তোমার মনে যে কষ্ট, ভয় আর অনিশ্চয়তা তৈরি হয়েছে, তার দায় আমার। আমি জানি, আমার কাজ তোমাকে এমন ভাবতে বাধ্য করেছে যে হয়তো আমার ভালোবাসা কমে গেছে, হয়তো আমি আর আগের মতো তোমাকে চাই না। কিন্তু সত্যিটা হলো, তোমার প্রতি আমার ভালোবাসা কমে যায়নি। তবুও শুধু মুখে বললে হবে না — আমার আচরণে, সততায়, দায়িত্ববোধে আর প্রতিদিনের ছোট ছোট কাজে তোমাকে সেটা অনুভব করাতে হবে।</p>
+<p>আমি চাই না তুমি আমার কথায় তাড়াতাড়ি বিশ্বাস করতে বাধ্য বোধ করো। তোমার সময় নেওয়ার অধিকার আছে, প্রশ্ন করার অধিকার আছে, কষ্ট পেলে সেটা বলার অধিকার আছে। আমি তোমার কথা শুনতে চাই, বুঝতে চাই, আর নিজের কাজ দিয়ে আবার বিশ্বাসের জায়গাটা তৈরি করতে চাই।</p>
+<p>তুমি আমার কাছে ভীষণ আপন। তোমার সঙ্গে একটা সুন্দর জীবন কল্পনা করি — যেখানে শুধু বড় বড় মুহূর্ত নয়, একসঙ্গে চা খাওয়া, রান্না, গল্প, হাসি, বৃষ্টি দেখা, মন খারাপের দিনে পাশে বসে থাকাও থাকবে। আমি তোমাকে বেছে নিই, হৃতিকাআ — আজও, আগামীকালও, আর প্রতিদিন আরও ভালোভাবে বেছে নিতে চাই।</p>
+<p>আমি তোমাকে ভালোবাসি, খুব যত্ন করে ভালোবাসতে চাই। তোমাকে কখনও নিজের ভালোবাসা নিয়ে একা বা অনিশ্চিত অনুভব করাতে চাই না। আমার কথার চেয়ে আমার কাজ যেন একদিন তোমাকে আরও নিশ্চিন্ত করে — এটাই চাই।</p>
+<p>ভালোবাসা রইল, সবসময়। ♡</p>
+</div>
+</div>
+</section>
+
+<section id="future">
+<div class="eyebrow center">Not just the big days</div>
+<h2>All the life in between</h2>
+<p class="section-intro">
+When I imagine a future with you, I don't only picture celebrations.
+I picture all the ordinary days that make a life.
+</p>
+<div class="future-grid">
+<div class="tile"><span class="emoji">☕</span><h3>Slow mornings</h3><p>Sharing coffee, sleepy conversations and unhurried breakfasts.</p></div>
+<div class="tile"><span class="emoji">🍳</span><h3>Our little kitchen</h3><p>Cooking together, tasting everything, laughing over little mistakes.</p></div>
+<div class="tile"><span class="emoji">🌧</span><h3>Rainy evenings</h3><p>Watching the rain, sharing stories and finding comfort in quiet company.</p></div>
+<div class="tile"><span class="emoji">🌻</span><h3>New places</h3><p>Travelling, collecting photographs and discovering the world side by side.</p></div>
+<div class="tile"><span class="emoji">🫶</span><h3>Hard days too</h3><p>Learning to listen, repair, support each other and face difficult moments as a team.</p></div>
+<div class="tile"><span class="emoji">🏡</span><h3>A place called home</h3><p>Building a life where both of us feel safe, respected and genuinely understood.</p></div>
+</div>
+</section>
+
+<div class="final">
+<div class="eyebrow">One last thing, my love</div>
+<h2>It's still you.</h2>
+<div class="script" style="font-size:42px">My favourite person. My favourite future.</div>
+<p>
+I don't want to love you only through letters and beautiful promises.
+I want to show it in the way I listen, the way I respect you,
+the way I tell the truth and the way I keep choosing to do better.
+</p>
+<p>
+Thank you for the memories, the food, the thoughtfulness,
+the laughter and all the little ways you have made my life warmer.
+You are deeply loved, Hritikaaa.
+</p>
+<div class="heart">♡</div>
+<h3 style="font-size:30px">A song for you</h3>
+<p>For the moments when words aren't quite enough.</p>
+<a class="btn" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Tere+Bin+Nahi+Lagda+Dil+Mera+Rahat+Fateh+Ali+Khan">Play our song ♡</a>
+<p class="script" style="font-size:30px;margin-top:35px">Always, with love.</p>
+</div>
+
+<footer>Made with love, patience and a heart full of you. ♡</footer>
+
+<script>
+function preview(input){
+  const file=input.files && input.files[0];
+  if(!file)return;
+  if(!file.type.startsWith('image/'))return;
+  const reader=new FileReader();
+  reader.onload=function(e){
+    const card=input.closest('.photo-card');
+    let img=card.querySelector('img');
+    if(!img){
+      img=document.createElement('img');
+      const placeholder=card.querySelector('.photo-placeholder');
+      if(placeholder)placeholder.replaceWith(img);
+      else card.prepend(img);
+    }
+    img.src=e.target.result;
+    img.alt='A personal photograph';
+  };
+  reader.readAsDataURL(file);
+}
+</script>
+</body>
+</html>
